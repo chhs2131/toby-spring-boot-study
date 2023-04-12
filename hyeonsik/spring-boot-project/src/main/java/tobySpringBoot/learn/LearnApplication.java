@@ -39,8 +39,8 @@ public class LearnApplication {
 	}
 
 	public static void main(String[] args) {
-		// MySpringApplication.run(LearnApplication.class, args);  // 우리가 만든 클래스로 동작
-		SpringApplication.run(LearnApplication.class, args);  // 실제 스프링의 동작
+		MySpringApplication.run(LearnApplication.class, args);  // 우리가 만든 클래스로 동작
+		// SpringApplication.run(LearnApplication.class, args);  // 실제 스프링의 동작
 	}
 
 
