@@ -25,18 +25,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Configuration
-@ComponentScan  // 이 패키지부터 하위 패키지까지 모든 @Component 를 스캔해서 빈으로 등록해 준다.
+//@Configuration
+//@ComponentScan  // 이 패키지부터 하위 패키지까지 모든 @Component 를 스캔해서 빈으로 등록해 준다.
+@SpringBootApplication
 public class LearnApplication {
-	@Bean
-	public ServletWebServerFactory servletWebServerFactory() {
-		return new TomcatServletWebServerFactory();
-	}
-
-	@Bean
-	public DispatcherServlet dispatcherServlet() {
-		return new DispatcherServlet();
-	}
+//	@Bean
+//	public ServletWebServerFactory servletWebServerFactory() {
+//		return new TomcatServletWebServerFactory();
+//	}
+//
+//	@Bean
+//	public DispatcherServlet dispatcherServlet() {
+//		return new DispatcherServlet();
+//	}
 
 	public static void main(String[] args) {
 		// MySpringApplication.run(LearnApplication.class, args);  // 우리가 만든 클래스로 동작
